@@ -1,14 +1,12 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import { Button } from "./components/Button";
+import CounterManagement from "./components/CounterManagement";
 
 function App() {
 	return (
 		<>
-			<h1>My React Udemy Tutorial!</h1>
-			<Button type='primary'>Primary</Button>
-			<Button>Default</Button>
+			<h1>My React App!</h1>
+			<CounterManagement ownerName='CanonMinds' />
 		</>
 	);
 }
