@@ -5,23 +5,12 @@ import CounterManagement from "./components/CounterManagement";
 interface AppState {
 	change: boolean;
 }
-class App extends React.Component<{}, AppState> {
-	constructor(props: {}) {
-		super(props);
-		this.state = {
-			change: true,
-		};
-	}
-	clickButton = () => {
-		this.setState({ change: !this.state.change });
-	};
-
+class App extends React.Component {
 	render() {
 		return (
 			<>
 				<h1>My React App!</h1>
-				{this.state.change && <CounterManagement ownerName='CanonMinds' />}
-				<button onClick={this.clickButton}>Change</button>
+				<CounterManagement ownerName='CanonMinds' />
 			</>
 		);
 	}
