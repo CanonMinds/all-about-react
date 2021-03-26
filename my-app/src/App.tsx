@@ -1,19 +1,17 @@
-import React from "react";
-import "./App.css";
-import CounterManagement from "./components/CounterManagement";
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import FirstComponent from './components/FirstComponent';
 
-interface AppState {
-	change: boolean;
-}
 class App extends React.Component {
-	render() {
-		return (
-			<>
-				<h1>My React App!</h1>
-				<CounterManagement ownerName='CanonMinds' />
-			</>
-		);
-	}
+  render() {
+    return (
+      <>
+        <h1>My App</h1>
+        <FirstComponent />
+      </>
+    )
+  }
 }
 
 export default App;
